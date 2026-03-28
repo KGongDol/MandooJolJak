@@ -2,8 +2,11 @@ using UnityEngine;
 
 public class TextSlider : MonoBehaviour
 {
+    [Header("슬라이드 시킬 텍스트")]
     public Transform slideText;
+
     [Header("속도")]
+    [Range(10,50)]
     public float speed = 3.0f;
 
     [Header("텍스트가 이동을 시작할 지점(오른쪽)")]
