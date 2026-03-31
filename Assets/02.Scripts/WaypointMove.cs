@@ -52,7 +52,6 @@ public class WaypointMove : MonoBehaviour
         Vector3 charPos = new(mainChar.position.x, mainChar.position.y, 0f);
 
         Vector3 moveDir = (nextPos - charPos).normalized;
-        Debug.Log(moveDir);
         if (moveDir != Vector3.zero)
         {
             float targetY;
