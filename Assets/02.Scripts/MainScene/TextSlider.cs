@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TextSlider : MonoBehaviour
@@ -16,6 +17,8 @@ public class TextSlider : MonoBehaviour
 
     [Header("슬라이드 시킬 텍스트")]
     public Transform[] texts;
+    [Header("고정 텍스트")]
+    public Transform[] fixedTexts;
     internal int selectedIdx = 0;
     
     [Header("속도")]
@@ -48,8 +51,20 @@ public class TextSlider : MonoBehaviour
             curText.position = new Vector3(startX, curText.position.y, curText.position.z);
     }
 
-    public void SetSlidingText()
+    public void SetSlidingText(int index)
     {
         
+        texts[selectedIdx].gameObject.SetActive(false);
+
+        if(selectedIdx < fixedTexts.Length)
+            fixedTexts[selectedIdx].gameObject.SetActive(false);
+
+        selectedIdx = index;
+        texts[selectedIdx].gameObject.SetActive(true);
+
+        if(selectedIdx < fixedTexts.Length)
+            fixedTexts[selectedIdx].gameObject.SetActive(true);
+            
+        curText = texts[selectedIdx];
     }
 }

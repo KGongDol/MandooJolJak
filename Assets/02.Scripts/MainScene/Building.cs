@@ -8,7 +8,8 @@ public class Building : MonoBehaviour, IInteractive
     public Color accessableColor;
     public Color unAccessableColor;
     public int thickness = 20;
-    
+
+    public int buildingIdx;
     void Awake()
     {
         UnsetInteract();
@@ -45,7 +46,10 @@ public class Building : MonoBehaviour, IInteractive
         Material myMat = renderer.material;
 
         if(isSet)
+        {
             myMat.SetFloat("_Thickness", thickness);
+            MainManager.instance.PlayPointerSFX();
+        }
         else
             myMat.SetFloat("_Thickness", 0);
     }
@@ -53,6 +57,7 @@ public class Building : MonoBehaviour, IInteractive
     public void IsCanInteract()
     {
         SetOutline(true);
+        TextSlider.instance.SetSlidingText(buildingIdx);
         if(isAccess)
         {
             SetMaterial(true);
