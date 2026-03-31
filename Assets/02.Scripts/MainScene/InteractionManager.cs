@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections.Generic;
 using System.Linq;
 
 public class InteractionManager : MonoBehaviour
@@ -7,26 +6,24 @@ public class InteractionManager : MonoBehaviour
     IInteractive curInt;
     IInteractive prevInt;
     int interIdx = 0;
+
+    public Building[] buildingList;
     IInteractive[] interList;
     Vector3 prevMousePos = Vector3.zero;
     void Awake()
     {
-        var allMonos = FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None);
-        var list = new List<IInteractive>();
-        foreach(var m in allMonos)
-        {
-            if(m is IInteractive inter)
-                list.Add(inter);
-        }
-        interList = list.ToArray();
+        interList = buildingList
+            .Select(b => b.GetComponent<IInteractive>())
+            .Where(i => i != null)
+            .ToArray();
     }
 
     void Start()
     {
         InputManager.instance.OnClicked += OnInteract;
         InputManager.instance.OnReturn += OnInteract;
-        InputManager.instance.OnRightArrow += SelectNextInteract;
-        InputManager.instance.OnLeftArrow += SelectPrevInteract;
+        InputManager.instance.OnRightArrow += SelectPrevInteract;
+        InputManager.instance.OnLeftArrow += SelectNextInteract;
     }
 
     void Update()
@@ -41,12 +38,13 @@ public class InteractionManager : MonoBehaviour
         {
             if(prevInt != null)
                 prevInt.UnsetInteract();
+            prevInt = curInt;    
 
-            if(curInt != null)
-            {
-                curInt.IsCanInteract();
-                prevInt = curInt;    
-            }
+        }
+
+        if(curInt != null)
+        {
+            curInt.IsCanInteract();
         }
     }
 

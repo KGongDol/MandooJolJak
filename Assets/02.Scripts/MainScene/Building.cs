@@ -8,7 +8,7 @@ public class Building : MonoBehaviour, IInteractive
     public Color accessableColor;
     public Color unAccessableColor;
     public int thickness = 20;
-
+    public int myPointIdx;
     public int buildingIdx;
     void Awake()
     {
@@ -58,6 +58,7 @@ public class Building : MonoBehaviour, IInteractive
     {
         SetOutline(true);
         TextSlider.instance.SetSlidingText(buildingIdx);
+        WaypointMove.instance.targetPointIdx = myPointIdx;
         if(isAccess)
         {
             SetMaterial(true);
