@@ -7,6 +7,7 @@ public class Building : MonoBehaviour, IInteractive
 
     public Color accessableColor;
     public Color unAccessableColor;
+    public int thickness = 20;
     
     void Awake()
     {
@@ -44,7 +45,7 @@ public class Building : MonoBehaviour, IInteractive
         Material myMat = renderer.material;
 
         if(isSet)
-            myMat.SetFloat("_Thickness", 35);
+            myMat.SetFloat("_Thickness", thickness);
         else
             myMat.SetFloat("_Thickness", 0);
     }
