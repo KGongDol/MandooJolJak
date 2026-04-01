@@ -39,7 +39,9 @@ public class InteractionManager : MonoBehaviour
             if(prevInt != null)
                 prevInt.UnsetInteract();
             prevInt = curInt;    
-
+    
+            if(curInt !=null)
+                MainManager.instance.PlayPointerSFX();
         }
 
         if(curInt != null)

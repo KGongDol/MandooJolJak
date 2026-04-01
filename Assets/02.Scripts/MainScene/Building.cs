@@ -48,7 +48,6 @@ public class Building : MonoBehaviour, IInteractive
         if(isSet)
         {
             myMat.SetFloat("_Thickness", thickness);
-            MainManager.instance.PlayPointerSFX();
         }
         else
             myMat.SetFloat("_Thickness", 0);
