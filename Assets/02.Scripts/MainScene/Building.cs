@@ -5,8 +5,8 @@ public class Building : MonoBehaviour, IInteractive
     public bool isAccess = false;
     public bool IsAccess => isAccess;
 
-    public Color accessableColor;
-    public Color unAccessableColor;
+    // public Color accessableColor;
+    // public Color unAccessableColor;
     public int thickness = 20;
     public int myPointIdx;
     public int buildingIdx;
@@ -29,16 +29,16 @@ public class Building : MonoBehaviour, IInteractive
 
     void SetMaterial(bool isAccess)
     {
-        Renderer renderer = GetComponent<Renderer>();
-        Material myMat = renderer.material;
-        if(isAccess)
-        {
-            myMat.SetColor("_SolidOutline", accessableColor);
-        }
-        else
-        {
-            myMat.SetColor("_SolidOutline", unAccessableColor);
-        }
+        // Renderer renderer = GetComponent<Renderer>();
+        // Material myMat = renderer.material;
+        // if(isAccess)
+        // {
+        //     myMat.SetColor("_SolidOutline", accessableColor);
+        // }
+        // else
+        // {
+        //     myMat.SetColor("_SolidOutline", unAccessableColor);
+        // }
     }
     void SetOutline(bool isSet)
     {
