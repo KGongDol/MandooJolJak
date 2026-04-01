@@ -56,13 +56,13 @@ public class TextSlider : MonoBehaviour
         
         texts[selectedIdx].gameObject.SetActive(false);
 
-        if(selectedIdx < fixedTexts.Length)
+        if(selectedIdx < fixedTexts.Length && fixedTexts[selectedIdx] != null)
             fixedTexts[selectedIdx].gameObject.SetActive(false);
 
         selectedIdx = index;
         texts[selectedIdx].gameObject.SetActive(true);
 
-        if(selectedIdx < fixedTexts.Length)
+        if(selectedIdx < fixedTexts.Length && fixedTexts[selectedIdx] != null)
             fixedTexts[selectedIdx].gameObject.SetActive(true);
             
         curText = texts[selectedIdx];

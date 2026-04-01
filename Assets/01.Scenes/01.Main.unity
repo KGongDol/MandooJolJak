@@ -171,10 +171,12 @@ MonoBehaviour:
   - {fileID: 1228132904}
   - {fileID: 1352518275}
   fixedTexts:
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1964690154}
-  - {fileID: 1128814170}
-  - {fileID: 1348302004}
   - {fileID: 1174715595}
+  - {fileID: 1348302004}
+  - {fileID: 1128814170}
   speed: 10
   startX: 39
   endX: -5.5
@@ -422,7 +424,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &302937744
 Transform:
   m_ObjectHideFlags: 0
@@ -1775,8 +1777,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Building
   isAccess: 0
-  accessableColor: {r: 1, g: 1, b: 1, a: 1}
-  unAccessableColor: {r: 1, g: 1, b: 1, a: 1}
   thickness: 20
   myPointIdx: 7
   buildingIdx: 5
@@ -2050,7 +2050,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1128814170
 Transform:
   m_ObjectHideFlags: 0
@@ -2391,8 +2391,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Building
   isAccess: 0
-  accessableColor: {r: 1, g: 1, b: 1, a: 1}
-  unAccessableColor: {r: 1, g: 1, b: 1, a: 1}
   thickness: 20
   myPointIdx: 4
   buildingIdx: 3
@@ -2769,8 +2767,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Building
   isAccess: 0
-  accessableColor: {r: 1, g: 1, b: 1, a: 1}
-  unAccessableColor: {r: 1, g: 1, b: 1, a: 1}
   thickness: 20
   myPointIdx: 2
   buildingIdx: 2
@@ -3208,8 +3204,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Building
   isAccess: 0
-  accessableColor: {r: 1, g: 1, b: 1, a: 1}
-  unAccessableColor: {r: 1, g: 1, b: 1, a: 1}
   thickness: 20
   myPointIdx: 1
   buildingIdx: 1
@@ -4076,8 +4070,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Building
   isAccess: 1
-  accessableColor: {r: 1, g: 1, b: 1, a: 1}
-  unAccessableColor: {r: 1, g: 1, b: 1, a: 1}
   thickness: 20
   myPointIdx: 0
   buildingIdx: 0
@@ -4428,8 +4420,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Building
   isAccess: 0
-  accessableColor: {r: 1, g: 1, b: 1, a: 1}
-  unAccessableColor: {r: 1, g: 1, b: 1, a: 1}
   thickness: 20
   myPointIdx: 6
   buildingIdx: 4
@@ -4924,8 +4914,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4004373873941353507, guid: cb256eb18919ea346b3a746dbdbc110d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1396118710779340272}
   m_SourcePrefab: {fileID: 100100000, guid: cb256eb18919ea346b3a746dbdbc110d, type: 3}
+--- !u!1 &1396118710779340271 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4004373873941353507, guid: cb256eb18919ea346b3a746dbdbc110d, type: 3}
+  m_PrefabInstance: {fileID: 1396118710779340270}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1396118710779340272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396118710779340271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outline
+  outlineMode: 0
+  outlineColor: {r: 0.44025147, g: 0.44025147, b: 0.44025147, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
