@@ -15,6 +15,7 @@ MonoBehaviour:
   sceneDatas_byGuid:
     keys:
     - 99c9720ab356a0642a771bea13969a05
+    - 098cb10c8f17f884581b420ca5e18e20
     values:
     - goDatas_byGlobalId:
         keys:
@@ -127,6 +128,49 @@ MonoBehaviour:
           isColorRecursive: 0
         - colorIndex: 7
           iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-098cb10c8f17f884581b420ca5e18e20-1069766048-0
+        - globalObjectIdString: GlobalObjectId_V1-2-098cb10c8f17f884581b420ca5e18e20-281963433-0
+        - globalObjectIdString: GlobalObjectId_V1-2-098cb10c8f17f884581b420ca5e18e20-1191974066-0
+        - globalObjectIdString: GlobalObjectId_V1-2-098cb10c8f17f884581b420ca5e18e20-59383917-0
+        - globalObjectIdString: GlobalObjectId_V1-2-098cb10c8f17f884581b420ca5e18e20-3335288286717333529-0
+        - globalObjectIdString: GlobalObjectId_V1-2-098cb10c8f17f884581b420ca5e18e20-450753637-0
+        - globalObjectIdString: GlobalObjectId_V1-2-098cb10c8f17f884581b420ca5e18e20-1468940061-0
+        - globalObjectIdString: GlobalObjectId_V1-2-098cb10c8f17f884581b420ca5e18e20-484052043-0
+        values:
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: Camera Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: 
           isIconRecursive: 0
           isColorRecursive: 0
   bookmarks: []
