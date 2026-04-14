@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01.Scenes/01.Main.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/01.Scenes/02.VoidSpace.unity
+    guid: 098cb10c8f17f884581b420ca5e18e20
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

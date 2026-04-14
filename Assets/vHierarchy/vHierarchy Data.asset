@@ -140,25 +140,28 @@ MonoBehaviour:
         - globalObjectIdString: GlobalObjectId_V1-2-098cb10c8f17f884581b420ca5e18e20-450753637-0
         - globalObjectIdString: GlobalObjectId_V1-2-098cb10c8f17f884581b420ca5e18e20-1468940061-0
         - globalObjectIdString: GlobalObjectId_V1-2-098cb10c8f17f884581b420ca5e18e20-484052043-0
+        - globalObjectIdString: GlobalObjectId_V1-2-098cb10c8f17f884581b420ca5e18e20-919132149155446097-1640418793
+        - globalObjectIdString: GlobalObjectId_V1-2-098cb10c8f17f884581b420ca5e18e20-919132149155446097-2110895468
+        - globalObjectIdString: GlobalObjectId_V1-2-098cb10c8f17f884581b420ca5e18e20-919132149155446097-1026128859
         values:
         - colorIndex: 3
-          iconNameOrGuid: 
+          iconNameOrGuid: Light Icon
           isIconRecursive: 0
           isColorRecursive: 0
         - colorIndex: 6
-          iconNameOrGuid: 
+          iconNameOrGuid: MeshCollider Icon
           isIconRecursive: 0
           isColorRecursive: 0
         - colorIndex: 6
-          iconNameOrGuid: 
+          iconNameOrGuid: MeshCollider Icon
           isIconRecursive: 0
           isColorRecursive: 0
         - colorIndex: 3
-          iconNameOrGuid: 
+          iconNameOrGuid: Light Icon
           isIconRecursive: 0
           isColorRecursive: 0
         - colorIndex: 3
-          iconNameOrGuid: 
+          iconNameOrGuid: Light Icon
           isIconRecursive: 0
           isColorRecursive: 0
         - colorIndex: 7
@@ -171,6 +174,18 @@ MonoBehaviour:
           isColorRecursive: 0
         - colorIndex: 9
           iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: AvatarMask On Icon
           isIconRecursive: 0
           isColorRecursive: 0
   bookmarks: []
